@@ -43,4 +43,5 @@ symblic_link () {
 }
 
 symblic_link .vimrc
+symblic_link .tigrc
 
