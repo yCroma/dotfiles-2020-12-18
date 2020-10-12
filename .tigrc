@@ -1,0 +1,2 @@
+# set key 'P' for git push
+bind generic P      ?git push -u %(remote) %(repo:head)
