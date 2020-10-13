@@ -1,6 +1,10 @@
 #!/bin/bash
 
-sudo yum -y install openssl
+sudo yum -y install \
+    curl-devel \
+    expat \
+    expat-devel \
+    openssl-devel \
 
 cd /usr/local/src/
 
