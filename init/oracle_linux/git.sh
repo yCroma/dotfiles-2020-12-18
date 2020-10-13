@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo yum -y install openssl
+
 cd /usr/local/src/
 
 sudo wget https://www.kernel.org/pub/software/scm/git/git-2.28.0.tar.gz
