@@ -50,7 +50,7 @@ imap <C-b> <Right>
 nnoremap <silent>bp :bprevious<CR>
 nnoremap <silent>bn :bnext<CR>
 " 直前のバッファを開く
-nnoremap <silent>bb :b#<CR>
+" nnoremap <silent>bb :b#<CR>
 nnoremap <silent>bf :bfirst<CR>
 nnoremap <silent>bl :blast<CR>
 " 編集中のバッファへ移動
