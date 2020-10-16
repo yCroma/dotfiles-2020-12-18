@@ -27,6 +27,7 @@ set wrapscan               " reache the bottom, go to top
 nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
 
 set splitright             " open tab to right
+set hidden                 " move if file isn't seved
 
 " move carsol like physics
 nnoremap j gj
