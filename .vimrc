@@ -46,6 +46,17 @@ imap <C-n> <Down>
 imap <C-f> <Left>
 imap <C-b> <Right>
 
+" move buffer
+nnoremap <silent>bp :bprevious<CR>
+nnoremap <silent>bn :bnext<CR>
+" 直前のバッファを開く
+nnoremap <silent>bb :b#<CR>
+nnoremap <silent>bf :bfirst<CR>
+nnoremap <silent>bl :blast<CR>
+" 編集中のバッファへ移動
+nnoremap <silent>bm :bm<CR>
+nnoremap <silent>bd :bdelete<CR>
+
 " add new line into normal mode with Enter
 noremap <CR> $i<Right><CR><ESC>
 
