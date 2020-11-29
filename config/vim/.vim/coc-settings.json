@@ -1,0 +1,16 @@
+{
+    "languageserver": {
+        "terraform": {
+            "command": "terraform-lsp",
+            "filetypes": [
+                "terraform",
+                "tf"
+            ],
+            "initializationOptions": {},
+            "settings": {}
+        }
+    },
+    "explorer.floating.width": 70,
+    "explorer.previewAction.onHover": false,
+    "explorer.openAction.onHover": "sourceWindow"
+}
