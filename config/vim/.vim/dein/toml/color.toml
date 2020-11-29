@@ -1,0 +1,26 @@
+# color.toml
+
+# colorscheme
+[[plugins]]
+repo = 'flazz/vim-colorschemes'
+hook_add = '''
+   au VimEnter * nested colorscheme Tomorrow-Night-Bright
+'''
+
+# airline
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+  let g:airline_theme='zenburn'
+  let g:airline#extensions#tabline#enabled = 1
+  set t_Co=256 " この設定がないと色が正しく表示されない
+  let g:airline#extensions#tabline#buffer_idx_mode = 1
+  let g:airline_powerline_fonts = 1
+  set ttimeoutlen=1
+'''
+
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+

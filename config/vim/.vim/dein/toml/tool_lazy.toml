@@ -1,0 +1,39 @@
+# tool_lazy.toml
+
+# emmet
+[[plugins]]
+repo = 'mattn/emmet-vim'
+
+[[plugins]]
+repo = 'mattn/webapi-vim'
+# hook_add = '''
+#   snnippets_custom.json for emmet
+#   let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.vim/.snippets_custom.json')), "\n"))
+#
+#   mattn lsp settings
+#   let g:lsp_settings_servers_dir='~/.local/share/vim-lsp-settings/servers'
+# '''
+
+# format
+# terraform
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+hook_add = '''
+  " auto indent for terraform
+  let g:terraform_align=1
+  " auto format for terraform
+  let g:terraform_fmt_on_save=1
+'''
+
+# change '' to "
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+# jump chars
+repo = 'justinmk/vim-sneak'
+
+
+# keep indent
+[[plugins]]
+repo = 'ConradIrwin/vim-bracketed-paste'
+

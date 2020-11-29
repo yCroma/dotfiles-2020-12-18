@@ -1,0 +1,23 @@
+# lexima.toml
+
+[[plugins]]
+repo = 'cohama/lexima.vim'
+hook_add = '''
+#    " lexima#add_rule {{{
+#    " /*  */
+     call lexima#add_rule({'char': '*', 'at': '/\%#', 'input': '* ', 'input_after': ' */'})
+     call lexima#add_rule({'char': '<BS>', 'at': '/* \%#', 'input': '<BS><BS><BS>', 'delete': 3})
+#    " <!--  -->
+     call lexima#add_rule({'char': '!', 'at': '<\%#', 'input': '!-- ', 'input_after': ' -->'})
+     call lexima#add_rule({'char': '<BS>', 'at': '<!-- \%#', 'input': '<BS><BS><BS><BS><BS>', 'delete': 4, 'filetype': 'html'})
+#    " add new line for emmet html
+     call lexima#add_rule({'char': '<CR>', 'at': '>\%#<', 'input_after': '<CR>', 'filetype': 'html'})
+#    " `````` add middle new line
+     call lexima#add_rule({'char': '<CR>', 'at': '```\%#', 'input_after': '<CR>'})
+#
+#    " lexima setting
+     let g:lexima_enable_newline_rules = 1
+
+#    " }}}
+''' 
+

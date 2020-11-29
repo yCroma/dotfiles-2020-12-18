@@ -1,0 +1,10 @@
+# tool_lazy2.toml
+
+# cheatsheet
+# :Cheat (readonly)
+# file: ~/.vim/.cheatsheet.md
+[[plugins]]
+repo = 'reireias/vim-cheatsheet'
+hook_add = '''
+  let g:cheatsheet#cheat_file = '~/.vim/.cheatsheet.md'
+'''

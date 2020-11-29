@@ -1,0 +1,11 @@
+# git.toml
+
+# gitgutter
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+# git fugitive
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+
