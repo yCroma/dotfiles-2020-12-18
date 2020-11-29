@@ -12,5 +12,6 @@
     },
     "explorer.floating.width": 70,
     "explorer.previewAction.onHover": false,
-    "explorer.openAction.onHover": "sourceWindow"
+    "explorer.openAction.onHover": "sourceWindow",
+    "explorer.file.showHiddenFiles": true
 }
