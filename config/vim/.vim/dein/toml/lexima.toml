@@ -2,7 +2,7 @@
 
 [[plugins]]
 repo = 'cohama/lexima.vim'
-hook_add = '''
+hook_post_source = '''
 #    " lexima#add_rule {{{
 #    " /*  */
      call lexima#add_rule({'char': '*', 'at': '/\%#', 'input': '* ', 'input_after': ' */'})
