@@ -5,13 +5,10 @@
 repo = 'neoclide/coc.nvim'
 # CocInstall coc-explorer
 hook_add = '''
-  let g:coc_explorer_global_presets = {
-\   'ide' : {
-\     'open-action-strategy': 'sourceWindow',
-\     'floating-width' : 70,
-\   }
-\ }
-  nmap <space>e :CocCommand explorer --preset ide<CR>
+  nmap <space>e :CocCommand explorer<CR>
+  if !argc()
+    autocmd vimenter * :CocCommand explorer
+  endif
 '''
 
 # Vaffle filer
