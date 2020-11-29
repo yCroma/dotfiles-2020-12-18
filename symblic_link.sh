@@ -3,6 +3,8 @@
 # ファイル名を引数にとり、シンボリックを張る関数
 # sample) symblic_link .vimrc
 
+# 旧symblic_link()
+
 # dotfilesフォルダ内にあるか
 #  |    |
 #  |    シンボリックは貼られているか - OK
@@ -42,6 +44,23 @@ symblic_link () {
     fi
 }
 
-symblic_link .vimrc
 symblic_link .tigrc
+
+# 新symblick_link()
+
+# ツールを選択したら、それを元にリンクを作成していく
+
+# ツール名/実際に置くファイル
+dir_symblic_link () {
+  ln -sf ~/dotfiles/config/$1/$2 ~/$2
+  echo "OK: $1/$2 linked"
+}
+
+file_symblic_link () {
+  ln -sf ~/dotfiles/config/$1/$2 ~/$2
+  echo "OK: $1/$2 linked"
+}
+
+dir_symblic_link vim .vim
+file_symblic_link vim .vimrc
 
