@@ -1,5 +1,12 @@
 # dotfiles
 
+## 必須要件
+
+- Nodeインストール（coc.nvimのため）
+- Powerlinefontのインストール（vim_airline,tig_airlineのため）
+  - フォントの種類
+  - Meslo LG S DZ Regular for Powerline 11pt
+
 ## 使い方
 
 - サーバーにgitをインストール
