@@ -13,6 +13,12 @@
       - `sudo dnf install powerline-fonts`
     - それら以外
       - git参照(https://github.com/powerline/fonts)
+- deinのインストール（プラグイン管理）
+  - https://github.com/Shougo/dein.vim
+
+### 補助要件
+
+- tigのインストール
 
 ## 使い方
 
