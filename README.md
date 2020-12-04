@@ -7,7 +7,7 @@
   - フォントの種類
     - Meslo LG S DZ Regular for Powerline 11pt
   - インストール方法
-    - Ubuntu
+    - Ubuntu/Debian
       - `sudo apt-get install fonts-powerline`
     - CentOS（dnfが使えるもの）
       - `sudo dnf install powerline-fonts`
