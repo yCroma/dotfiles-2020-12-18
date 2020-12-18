@@ -2,7 +2,7 @@
 
 ## 必須要件
 
-- Nodeインストール（coc.nvimのため）
+- Node, npmインストール（coc.nvimのため）
 - Powerlinefontのインストール（vim_airline,tig_airlineのため）
   - フォントの種類
     - Meslo LG S DZ Regular for Powerline 11pt
